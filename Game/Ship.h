@@ -6,26 +6,25 @@
 #ifndef ___SHIP_HEADER___
 #define ___SHIP_HEADER___
 
-#include"ObjBase.h"
+#include "ObjBase.h"
 #include <Siv3D.hpp>
-
-<<<<<<< HEAD
+#include "Word.h"
 class Ship : public ObjBase {
 
 public:
-	int Init(int _graphID, std::string _words, int _speed);
+	int Init();
+	int Init(int _graphID, int _speed);
 	int Update();
 	int Draw();
 	int Release();
 
 	int graphID;//画像のIDを表す
-	std::string words;//読みこませる単語
+	Word words;//読みこませる単語
 	int speed;//船の移動する速さ
 	int position;//船の現在地
 };
 
 
-=======
 //class Ship : public ObjBase {
 //
 //public:
@@ -35,9 +34,6 @@ public:
 //	int Release();
 //
 //};
->>>>>>> refs/remotes/upstream/master
-
-
 
 
 #endif

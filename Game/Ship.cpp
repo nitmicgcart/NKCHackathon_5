@@ -3,6 +3,7 @@
 //--------------------------------------
 // インクルード
 #include "Ship.h"
+#include "Word.h"
 //--------------------------------------
 // 変数宣言
 
@@ -17,9 +18,12 @@
 //--------------------------------------
 // FncName  Ship::Init()
 //		Info 船の初期化処理を行う。画像のID、読みこませる単語、船の移動する速さを設定する
-int Ship::Init(int _graphID, std::string _words, int _speed) {
+int Ship::Init() {
+
+}
+int Ship::Init(int _graphID, int _speed) {
 	graphID = _graphID;
-	words = _words;
+	
 	speed = _speed;
 	position = 0;
 

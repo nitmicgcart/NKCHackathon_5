@@ -25,11 +25,14 @@ void Main()
 
 	while (System::Update())
 	{
+		TextureAsset(L"haikei").draw();
+
 		if (GetAsyncKeyState(VK_ESCAPE)) { break; }
 		if (Input::KeySpace.clicked) {
-			Ship::Init(1,L"あいう",3);
+			
 
-			Ship ship = new Ship();
+			Ship* ship  = new Ship();
+			ship->Init(1,3);
 		}
 
 		ObjBase::AllUpdateAndDraw();
