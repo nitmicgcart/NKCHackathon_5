@@ -9,6 +9,7 @@
 #include"ObjBase.h"
 #include <Siv3D.hpp>
 
+<<<<<<< HEAD
 class Ship : public ObjBase {
 
 public:
@@ -24,6 +25,17 @@ public:
 };
 
 
+=======
+//class Ship : public ObjBase {
+//
+//public:
+//	int Init();
+//	int Update();
+//	int Draw();
+//	int Release();
+//
+//};
+>>>>>>> refs/remotes/upstream/master
 
 
 
