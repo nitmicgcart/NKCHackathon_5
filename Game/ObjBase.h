@@ -31,7 +31,7 @@ public:
 
 	ObjBase() {
 		ObjectList.push_back(this);
-		Init();
+//		Init();
 	};
 
 	~ObjBase() {
